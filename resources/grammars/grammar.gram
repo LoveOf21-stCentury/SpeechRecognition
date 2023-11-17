@@ -1,0 +1,5 @@
+grammar grammar;
+
+public <questions> = (how are you | what day is today | who is here);
+public <answers> = (i'm fine | today is great day);
+public <phrases> = (do you have water | i'm here | hey mom);
