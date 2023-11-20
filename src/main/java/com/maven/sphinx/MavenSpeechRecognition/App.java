@@ -30,12 +30,12 @@ public class App {
 		configuration.setAcousticModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us");
 		configuration.setDictionaryPath("resource:/edu/cmu/sphinx/models/en-us/cmudict-en-us.dict");
 // For recognizing individual words;
-//		configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
+		configuration.setLanguageModelPath("resource:/edu/cmu/sphinx/models/en-us/en-us.lm.bin");
 		
 // For recognizing phrases from GRAM 
-		configuration.setGrammarPath("resource:/grammars");
-		configuration.setGrammarName("grammar");
-		configuration.setUseGrammar(true);
+//		configuration.setGrammarPath("resource:/grammars");
+//		configuration.setGrammarName("grammar");
+//		configuration.setUseGrammar(true);
 
 		try {
 			recognizer = new LiveSpeechRecognizer(configuration);
